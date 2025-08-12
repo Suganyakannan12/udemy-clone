@@ -46,6 +46,9 @@ body{
     gap: 10px;
     align-items: center;
 }
+.navbar__s4{
+    display: none;
+}
 /* My Learing Popup*/
 .mylearing{
     position: relative;
@@ -125,7 +128,10 @@ body{
     margin-top: 10px;
 }
 .course-card{
-    width: 250px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+   width: 150%;
 }
 .course-card img{
     height: 50%;
@@ -172,4 +178,27 @@ body{
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+/* media Quries */
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+    .catagories{
+        display: none;
+    }
+    .navbar__s2,.navbar__s3{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
 }
